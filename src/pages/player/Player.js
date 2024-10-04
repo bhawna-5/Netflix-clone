@@ -16,7 +16,7 @@ const Player = () => {
     headers: {
       accept: "application/json",
       Authorization:
-        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYWIyYjlmY2JmMDc4ZDI5Y2ZlNDk0NjRiZTUwZDNmOSIsIm5iZiI6MTcyNTE3NDA0Mi43NzY3NTEsInN1YiI6IjY2OGFlMjQxNTI0N2QwOTY3MDE1OTQyMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.984EnSquitTEG0PCftHfFVy5vxcIxnEH-rC9tEx9jcM",
+        `Bearer ${process.env.REACT_APP_TMDB_BEARER_TOKEN_Player}`,
     },
   };
   useEffect(() => {
